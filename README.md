@@ -70,8 +70,50 @@
 
 4) EVENTOS, FORMULÁRIOS E CRIANDO ELEMENTOS - 32 min
 
+    Eventos - quando percebemos o que o usuário esta fazendo - ações.
+        Podemos escutar através dos eventos.
+
+        addEventListener();
+
+
+    //chamando funcao anonima:
+
+	    titulo.addEventListener("click", function(){
+		    console.log("Olha só posso chamar uma função anonima!");
+
+	    });
+
+    //chamando funcoes nomeadas
+
+        titulo.addEventListener("click", mostraMensagem);
+
+	    function mostraMensagem(){
+		    console.log("Ola eu fui clicado!");
+	    }
+
+    - previne o comportamento padrão:
+        event.preventDefault();
+        //depois coloco o comportamento que eu quero para o evento.
+
+    
+    - com o form, podemos chamar seu input.
+
+        form.altura
+        form.peso   etc.
+
+
+        podemos pegar o valor
+
+            form.altura.value;
+
+    - permitir criar tags html no javascript:
+        createElement("nome_tag");
+    
+
+
 
 5) BOAS PRÁTICAS COM JAVASCRIPT - 36 min.
+
 
 
 6) VALIDAÇÃO DE FORMULÁRIOS - 40 min.
