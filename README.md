@@ -114,6 +114,27 @@
 
 5) BOAS PRÁTICAS COM JAVASCRIPT - 36 min.
 
+     - separar arquivos js por funcionalidades.
+
+    - separar blocos de códigos em funções. Para poder reutilizar o código em outros lugares, sem uma repetição sem sentido.
+
+    OBJETOS:
+
+    //Cara de um objeto criado no javascript
+
+        objeto paciente, com as características nome, peso, altura, gordura.
+     var paciente = {
+            nome: form.nome.value,
+            peso: form.peso.value,
+            altura: form.altura.value,
+            gordura: form.gordura.value
+        }
+
+    *querySelector - devolve um objeto.
+            textContent - característica desse objeto.
+
+    form.reset();  // no caso limpa o formulario
+
 
 
 6) VALIDAÇÃO DE FORMULÁRIOS - 40 min.
