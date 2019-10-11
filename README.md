@@ -48,6 +48,25 @@
 
 3) ARRAYS, LOOPS E ESTILOS - 23 min
 
+        toFixed(numero_casas_decimais);
+                imc.toFixed(2);
+
+
+        ESTILOS:
+
+            NO JAVASCRIPT:
+                propriedade style.
+
+                paciente.style.backgroundColor = "lightcoral";
+
+            COLOCAR NO CSS:
+                background-color: lightcoral;
+
+        manipular as classe do elemento
+
+            classList - retorna todas as classes 
+                método add.
+                    classList.add(classe_criada_no_css)
 
 4) EVENTOS, FORMULÁRIOS E CRIANDO ELEMENTOS - 32 min
 
