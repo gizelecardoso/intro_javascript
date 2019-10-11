@@ -1,5 +1,43 @@
 1) INTRODUÇÃO - 33 min
 
+    Comandos:
+        alert();
+        console.log();     F12 no browser - abre o console do desenvolvedor.
+
+        tag script:
+
+            <script></script>   //boa pratica carregar os scripts no final do body.
+
+
+        COMO ENTENDER MUNDO HTML NO MUNDO JAVASCRIPT:
+
+            DOM - representação do mundo HTML para o JAVASCRIPT.
+                *document
+                    tota a pagina é representada pelo document. Ele será a PONTE entre HTML e JAVASCRIPT.
+            
+                Para pesquisar algo no document: Função QUERYSELECTOR;
+
+                    document.querySelector("h1");
+
+                tag com conteudos de texto, podemos ter acesso a esse conteudo, através da propriedade:
+                    textContent
+
+                    variavel.textContent
+
+        BOAS PRÁTICAS:
+            - Não buscar pela tag - mas pela classe ou id ou seletores CSS.
+
+            - separar código HTML, código CSS e código JAVASCRIPT.
+                cria um arquivo .js
+                código sem a tag script
+
+                no código HTML:
+                        precisamos indicar onde esta o js como fazemos com css.
+                    <script src="caminho do arquivo js"><script>
+                
+                
+
+
 2) VARIÁVEIS E OPERADORES - 29 min
 
 
