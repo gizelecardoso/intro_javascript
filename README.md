@@ -40,6 +40,11 @@
 
 2) VARIÁVEIS E OPERADORES - 29 min
 
+    - Calculando o IMC
+        classe seleciona com o ponto(.)
+        id seleciona com o hastag(#)
+
+
 
 3) ARRAYS, LOOPS E ESTILOS - 23 min
 
