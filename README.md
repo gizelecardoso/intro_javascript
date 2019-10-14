@@ -181,6 +181,44 @@
 
 7) REMOÇÃO, DELEGAÇÃO E ANIMAÇÃO - 29 min
 
+    remoção:
+        .remove(); //função.
+
+            conhecemos dois comandos:
+
+                - this - especifica quem esta escutando a ação
+                - event.target - quem sofre a ação de ser clicado no caso.
+
+        tinha o problema do dblclick não funcionar com elementos que foram acrescentados depois a tabela
+
+        usamos:
+ 
+            event bubbling
+
+                - delegação, processo possível pelo borbulhamento.
+
+            - queriamos eliminar um elemento da tabela, TR.
+            - delegamos como escutador do evento o PAI de TR, no caso usamos a TABELA.
+
+            através do comando:
+                .parentNode;
+
+        *COMO o remove é um comando muito instantaneo
+
+            - acrescentamos a animação fadeOut.
+
+                NO CSS:
+
+                    Acrescentamos a classe:
+                        .fadeOut    
+                            opacidade 0 e a transicao de 0.5 s;
+            
+            - depois removemos com um atraso, com a ajuda da função:
+                    setTimeOut(function(){
+                        .remove();
+                    }, tempoParaExecutar);  //tempo em milisegundos.
+
+
 
 8) FILTRANDO UMA TABELA - 26 min
 
