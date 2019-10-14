@@ -139,6 +139,45 @@
 
 6) VALIDAÇÃO DE FORMULÁRIOS - 40 min.
 
+    *array de erros;
+        var erros = [];
+
+        função push - coloca o erro no array;
+            - erros.push("mensagem de erro");
+
+        form - indicar uma lista de erros
+            <ul id="mensagens-erros">
+                <li></li>//lista de erros, que será criada automaticamente.
+            </ul>
+        
+        funcao para manipular HTML
+            innerHTML
+                - podemos obter o conteudo HTML interno de um elemento;
+                - é uma propriedade e não função , ela recebe o novo conteudo através do sinal de = (E NÃO POR PARAMETRO);
+                - seu retorno é uma STRING, que representa todo o conteudo HTML interno do próprio elemento;
+
+
+                var mensagensErros = document.querySelector("#mensagens-erro");
+                mensagensErros.innerHTML = "";   // limpa os erros aprensentados anteriormente.
+
+        forEach:
+
+            array[]; // temos um array qualquer
+
+            //para percorrer no for normal:
+
+                for(var i = 0; i < array.length; i++){
+                    //faça algo;
+                }
+
+            //para percorrer com forEach:
+
+                array.forEach(function(nome){
+                    //faça algo;
+                });
+
+
+
 
 7) REMOÇÃO, DELEGAÇÃO E ANIMAÇÃO - 29 min
 
