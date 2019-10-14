@@ -6,9 +6,7 @@ var botaoAdicionar = document.querySelector("#adicionar-paciente");
         //extraindo informações do paciente do form
         var paciente = obtemPacienteDoFormulario(form);
 
-        //cria a tr e a td do paciente.
-		var pacienteTr = montaTr(paciente);
-        
+       
         var erros = validaPaciente(paciente);
         
         console.log(erros);
@@ -18,14 +16,12 @@ var botaoAdicionar = document.querySelector("#adicionar-paciente");
             return;
         }
         
-        //adicionando o paciente na tabela.
-		var tabela = document.querySelector("#tabela-pacientes");
-
-        tabela.appendChild(pacienteTr);
-        
+        adicionaPacienteNaTabela(paciente);
+       
         form.reset();
         var mensagensErro = document.querySelector("#mensagens-erro");
         mensagensErro.innerHTML = "";
+        
 
     })
     
@@ -107,4 +103,15 @@ var botaoAdicionar = document.querySelector("#adicionar-paciente");
             ul.appendChild(li);
 
         });
+    }
+
+    function adicionaPacienteNaTabela(paciente){
+        //cria a tr e a td do paciente.
+        var pacienteTr = montaTr(paciente);
+
+     //adicionando o paciente na tabela.
+		var tabela = document.querySelector("#tabela-pacientes");
+
+        tabela.appendChild(pacienteTr);
+        
     }

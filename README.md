@@ -244,6 +244,35 @@
 
 9) AJAX BUSCANDO PACIENTES COM AJAX - 30 min.
 
+    Objeto requisitor:
+
+        XMLHttpRequest
+            é responsavel por fazer requisições HTTP assíncronas com JavaScript. Utilizamos o new para trabalhar com ele.
+
+        var xhr = new XMLHttpRequest();
+
+        configurando a requisão para os devidos metodos:
+
+            xhr.open("tipo req", "url");
+                tipo req: GET, POST, PUT, DELETE.
+
+        
+        Pegou o JSON - um string:
+            var resposta = xhr.responseText;
+
+        Transformou em um Objeto do JavaScript
+            var pacientes = JSON.parse(resposta);
+
+        
+        *typeof:
+            console.log(typeof resposta); //IMPRIME STRING
+            console.log(typeof pacientes); // IMPRIME OBJECT.
+
+
+    TÉCNICA AJAX
+
+        Fazer requisições Assíncrona no JavaScript.
+            Assincrono, porque não para o fluxo do JavaScript.
 
 
 TOTAL = 278 min = 5 horas.
