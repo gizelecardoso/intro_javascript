@@ -222,6 +222,25 @@
 
 8) FILTRANDO UMA TABELA - 26 min
 
+    - evento de input:
+
+        campoFiltro.addEventListener("input", function(){
+        //console.log(campoFiltro.value);
+        console.log(this.value);
+
+
+    ESPRESSÕES REGURALES:
+
+        Tipo especial de texto.
+            Capaz de buscar textos.   CTRL+F
+
+        var expressao = new RegExp(o que, como);
+
+            parametros da funcao RegExp:
+                O QUE: 
+                COMO: CASE (incensitive "i" e censitive)
+
+
 
 9) AJAX BUSCANDO PACIENTES COM AJAX - 30 min.
 
